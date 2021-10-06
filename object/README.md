@@ -1,7 +1,7 @@
-# TCP server and client in java.
+# Sending an object
 
-This is a basic version of a TCP server and client that will send a message from the client to
-the server and back.
+This is a basic version of a TCP server and client that will send an object from the client to
+the server.
 ---
 
 ## To Compile

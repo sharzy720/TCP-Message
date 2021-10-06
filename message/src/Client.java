@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 /**
  * Creates a simple Client to talk with a server
+ * @version 10-6-21
  */
 public class Client {
     /**

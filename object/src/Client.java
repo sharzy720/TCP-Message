@@ -6,7 +6,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 /**
- * Creates a Client that sends an object to a Server
+ * Creates a TCP Client that sends an object to a Server
  * @version 10-6-2021
  */
 public class Client {
@@ -31,10 +31,14 @@ public class Client {
      */
     public static void main(String[] args) {
         Client client = new Client();
-        int port = Integer.parseInt(args[1]);
 
         try {
             InetAddress host = InetAddress.getByName(args[0]);
+            int port = Integer.parseInt(args[1]);
+
+            System.out.println("Attempting to connect to address: " + host.getHostAddress() +
+                    " on port: " + port);
+
             Socket socket = new Socket(host.getHostAddress(), port);
 
             // Creates an object to be sent to the Server
